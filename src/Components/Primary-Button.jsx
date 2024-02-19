@@ -1,0 +1,9 @@
+const PrimaryButton = (props) => {
+    return (
+        <button id={props.id} className="rounded bg-[#002147] px-[1.2rem] py-[.8rem] font-Inter text-white font-medium hover:opacity-90 transition ease-in-out delay-100">
+            {props.value}
+        </button>
+    )
+}
+
+export default PrimaryButton
