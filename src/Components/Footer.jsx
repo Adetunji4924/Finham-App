@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
             </div>
             <div>
-                <p className="mt-6 font-Inter text-gray-200">&copy; {currentYear} Finham.  All Rights Reserved</p>
+                <p className="mt-5 font-Inter text-gray-200">&copy; {currentYear} Finham.  All Rights Reserved</p>
             </div>
         </div>
     )
