@@ -1,8 +1,9 @@
 // import { useState } from "react"
+import PrimaryButton from "./Primary-Button";
 
 const Hero = () => {
     return (
-        <div className="bg-herowave bg-cover bg-center bg-no-repeat md:px-[5rem] px-[1rem] py-[3rem] md:py-[5rem] flex flex-wrap md:flex-nowrap justify-between items-center gap-[1rem] lg:gap-[3rem]">
+        <div className="bg-herowave bg-cover bg-center bg-no-repeat md:px-[3rem] lg:px-[5rem] px-[1rem] py-[3rem] md:py-[5rem] flex flex-wrap md:flex-nowrap justify-between items-center gap-[1.5rem] lg:gap-[3rem]">
             <div className="md:w-[50%]">
                 <img className="w-[70%]" src="src/images/Frame 6.svg" alt="" />
                 <div>
@@ -27,12 +28,13 @@ const Hero = () => {
                     </div>
                 </div>
                 <div>
-                    <form action="">
-
+                    <form action="" className="flex-col md:flex-row justify-start items-center">
+                        <input type="text" className="shadow appearance-none border w-full md:w-[60%] mb-4 md:mb-0 rounded px-[1.2rem] py-[.8rem] font-Inter text-[1rem] text-gray-700 leading-tight focus:border-secondary-0 focus:outline-none focus:shadow-outline" id="Institution" placeholder="Email" />
+                        <PrimaryButton value={"Pay Your Tuition"} id={"nav-button"} />
                     </form>
                 </div>
             </div>
-            <div className="w-auto">
+            <div className="md:w-[50%]">
                 <img src="src/images/Hero Image.png" alt="" />
             </div>
         </div>

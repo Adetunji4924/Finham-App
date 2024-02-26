@@ -9,7 +9,7 @@ const FaqAccordion = ({ faqData }) => {
   };
 
   return (
-    <div className="md:w-[60%]">
+    <div className="md:w-[80%] lg:w-[60%]">
       {faqData.map((item, index) => (
         <div key={index} className="mb-4 border-b border-gray-200">
           <div
