@@ -41,10 +41,10 @@ const Faq= () => {
         },
       ];
     return (
-        <div className='py-[5rem] px-[5rem]'>
+        <div className='py-[5rem] px-[1rem] md:px-[5rem]'>
             <div className='mb-[2rem]'>
-                <h1 className="text-[2.2rem] font-Inter font-semibold text-gray-900 text-center">Frequently asked questions</h1>
-                <p className="text-[1.2rem] font-Inter text-gray-600 text-center">Everything you need to know about Finham</p>
+                <h1 className="text-[1.5rem] md:text-[2.2rem] font-Inter font-semibold text-gray-900 text-center">Frequently asked questions</h1>
+                <p className="text-[.8rem] md:text-[1.2rem] font-Inter text-gray-600 text-center">Everything you need to know about Finham</p>
             </div>
             <div className="flex items-center justify-center">
                 <FaqAccordion faqData={faqData} />

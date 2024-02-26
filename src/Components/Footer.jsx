@@ -4,8 +4,8 @@ import {HashLink} from "react-router-hash-link"
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-        <div className="bg-footer bg-cover bg-center bg-no-repeat py-[4rem] px-[3rem]">
-            <div className="flex justify-between border-b-2 border-[#EAECF0] pb-[3rem]">
+        <div className="bg-footer bg-cover bg-center bg-no-repeat py-[4rem] px-[1rem] md:px-[3rem]">
+            <div className="flex flex-wrap md:flex-nowrap justify-between border-b-2 border-[#EAECF0] pb-[3rem]">
                 <div>
                     <img src="./src/images/MASTERLOGO (white) 2.png" alt="" />
                     <p className="font-Inter text-[1rem] text-gray-200 mt-6 mb-6">Effortless Tuition Fee Payments on a Global Scale.</p>
@@ -27,7 +27,7 @@ const Footer = () => {
                         </span>
                     </div>
                 </div>
-                <div>
+                <div className="mt-10 md:mt-0">
                     <h1 className="text-white font-semibold font-Inter mb-4">Quik Links</h1>
                     <ul className="flex flex-col gap-2">
                         <li className="font-Inter font-normal text-[1rem] text-white">

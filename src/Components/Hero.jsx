@@ -2,12 +2,12 @@
 
 const Hero = () => {
     return (
-        <div className="bg-herowave bg-cover bg-center bg-no-repeat px-[5rem] py-[5rem] flex justify-between items-center gap-[3rem]">
-            <div className="w-[50%]">
-                <img src="src/images/Frame 6.svg" alt="" />
+        <div className="bg-herowave bg-cover bg-center bg-no-repeat md:px-[5rem] px-[1rem] py-[3rem] md:py-[5rem] flex flex-wrap md:flex-nowrap justify-between items-center gap-[1rem] lg:gap-[3rem]">
+            <div className="md:w-[50%]">
+                <img className="w-[70%]" src="src/images/Frame 6.svg" alt="" />
                 <div>
-                    <h1 className="font-Bricolage text-[4rem] font-semibold text-gray-800">Effortless Tuition Fee Payments on a <span className="text-secondary-0 font-bold bg-ellipse bg-contain bg-center bg-no-repeat">Global</span> Scale.</h1>
-                    <p className="font-Inter text-[1rem] text-gray-600">The preferred financial partner for students and institutions worldwide, fostering trust and seamless transactions for millions around the globe.</p>
+                    <h1 className="font-Bricolage text-[2rem] md:text-[3rem] lg:text-[4rem] mt-4 md:mt-0 font-semibold text-gray-800">Effortless Tuition Fee Payments on a <span className="text-secondary-0 font-bold bg-ellipse bg-contain bg-center bg-no-repeat">Global</span> Scale.</h1>
+                    <p className="font-Inter text-[.9rem] md:text-[1rem] text-gray-600">The preferred financial partner for students and institutions worldwide, fostering trust and seamless transactions for millions around the globe.</p>
                 </div>
                 <div className="my-[2rem]">
                     <div className="flex justify-start items-center gap-2">
@@ -32,7 +32,7 @@ const Hero = () => {
                     </form>
                 </div>
             </div>
-            <div>
+            <div className="w-auto">
                 <img src="src/images/Hero Image.png" alt="" />
             </div>
         </div>
