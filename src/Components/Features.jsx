@@ -2,11 +2,11 @@ import PrimaryButton from "./Primary-Button";
 
 const Features = () => {
     return (
-        <div id="Features" className="bg-[#F8FBFF] flex flex-col justify-center items-center px-[1rem] md:px-[5rem] py-[3rem]">
+        <div id="Features" className="bg-[#F8FBFF] flex flex-col justify-center items-center px-[1rem] md:px-[3rem] lg:px-[5rem] py-[3rem]">
             <div>
-                <h1 className="font-Bricolage text-[1.8rem] md:text-[4rem] text-center">Why Choose <br /> <span className="text-secondary-0">Finham</span></h1>
+                <h1 className="font-Bricolage text-[1.8rem] md:text-[2.5rem] lg:text-[4rem] text-center">Why Choose <br /> <span className="text-secondary-0">Finham</span></h1>
             </div>
-            <div className="pt-8 md:w-[80%]">
+            <div className="pt-8 lg:w-[80%]">
                 <div className="flex flex-wrap md:flex-nowrap items-center justify-center gap-7">
                     <div className="bg-white px-4 py-4 rounded flex flex-col gap-10 md:gap-5 items-start md:w-[50%]">
                         <div>
