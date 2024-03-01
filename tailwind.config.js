@@ -20,10 +20,12 @@ export default {
         ellipse: "url('./src/images/Ellipse 2.svg')",
         left: "url('./src/images/Left.png')",
         sidebar: "url('./src/images/Sidebar.png')",
-        footer: "url('./src/images/Frame 45733.png')"
+        footer: "url('./src/images/Frame 45733.png')",
+        Privacy: "url('./src/images/Header section.png')"
       },
 
       screens: {
+        'lsm': '300px',
         'xsm': '400px',
         'sm': '640px',
         // => @media (min-width: 640px) { ... }

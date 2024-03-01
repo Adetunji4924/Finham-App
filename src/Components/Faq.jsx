@@ -1,5 +1,6 @@
 import FaqAccordion from './Faqaccordion.jsx';
 import PrimaryButton from './Primary-Button.jsx';
+import { Link } from "react-router-dom";
 
 const Faq= () => {
     const faqData = [
@@ -53,7 +54,9 @@ const Faq= () => {
                 <h1 className="text-gray-900 font-Inter text-[1.2rem] font-semibold text-center mb-2">Still have questions?</h1>
                 <p className="text-[1rem] font-Inter text-gray-600 text-center mb-8">Can’t find the answer you’re looking for? Please chat to our friendly team.</p>
                 <div>
-                    <PrimaryButton value={"Contact Us"} id={"nav-button"} />
+                    <Link to="Contact-Us" relative='path'>
+                        <PrimaryButton value={"Contact Us"} id={"nav-button"} />
+                    </Link>
                 </div>
             </div>
         </div>

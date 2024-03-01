@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-// import {HashLink} from "react-router-hash-link"
 
-const Login = () => {
+const CreateAccount = () => {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
@@ -29,10 +28,10 @@ const Login = () => {
       <div className="flex flex-col justify-center items-center w-[80%] md:w-[50%]">
         <div className="md:w-[50%] mb-8">
           <h1 className="text-center text-[2rem] font-Bricolage font-bold text-gray-800">
-            Log in
+            Create Account
           </h1>
           <p className="text-center text-[0.8rem] font-Bricolage">
-            Log into your agent account to make student tuition payments, its
+            As an agent, create an account to make student tuition payments, its
             free and easy!
           </p>
         </div>
@@ -95,8 +94,22 @@ const Login = () => {
                 >
                   <path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
                 </svg>
-              )};
+              )}
             </div>
+          </div>
+          <div>
+            <label
+              htmlFor="password"
+              className="block text-gray-800 text-[1rem] font-Bricolage font-medium mb-2"
+            >
+              Company Name
+            </label>
+            <input
+              type="text"
+              className="shadow appearance-none border rounded w-full py-3 px-5 mb-4 text-gray-700 leading-tight focus:border-secondary-0 focus:outline-none focus:shadow-outline"
+              id="company"
+              placeholder="Input your company name"
+            />
           </div>
           <div className="flex items-center justify-center">
             <button className="bg-secondary-0 w-full px-4 py-2 rounded text-white text-[1rem] font-Bricolage font-medium hover:text-secondary-0 hover:bg-transparent hover:border border-secondary-0 transition ease-in-out delay-150">
@@ -109,14 +122,14 @@ const Login = () => {
 
         <div className="flex justify-center flex-col items-center">
           <p className="text-center font-Inter text-[.8rem] font-semibold mt-4">
-            Don’t have an account?
+            Already have an account?
           </p>
           <Link
-            to="/Create-Account"
+            to="/Login"
             relative="path"
             className="text-secondary-0 font-Inter text-[.8rem] font-medium underline"
           >
-            Create Account
+            Log in
           </Link>
         </div>
       </div>
@@ -124,4 +137,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default CreateAccount;
