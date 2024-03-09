@@ -28,10 +28,14 @@ const Header = () => {
     <div
       className={`${
         isSticky ? "fixed top-0 left-0 w-full" : ""
-      } flex justify-between items-center z-50 bg-gray-100 border-2 md:px-[3rem] lg:px-[5rem] px-[1rem] py-[1rem] backdrop-blur-md bg-opacity-50`}
+      } flex justify-between items-center z-50 bg-white border-gray-100 border-b-2 md:px-[3rem] lg:px-[5rem] px-[1rem] py-[1rem] backdrop-blur-md bg-opacity-70`}
     >
       <Link to="/" relative="path">
-        <img src="src/images/MASTERLOGO (Black)-1 1.png" alt="Finham Logo" className="xsm:w-[100%] w-[70%]" />
+        <img
+          src="src/images/MASTERLOGO (Black)-1 1.png"
+          alt="Finham Logo"
+          className="xsm:w-[100%] w-[70%]"
+        />
       </Link>
       <div>
         <ul

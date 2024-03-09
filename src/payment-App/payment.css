@@ -1,0 +1,32 @@
+.step-item {
+  @apply relative flex flex-col justify-center items-center w-48;
+}
+
+.step-item:not(:first-child)::before {
+  @apply absolute content-[''] w-full h-[2px] right-2/4 top-1/3 translate-y-2/4 bg-gray-800;
+}
+
+.active .step {
+  @apply bg-secondary-0 text-white;
+}
+
+.active .step-text {
+  @apply text-secondary-0 font-semibold;
+}
+
+.complete .step {
+  @apply bg-[#EEF5FE];
+}
+
+.complete:not(:first-child)::before,
+.active:not(:first-child)::before {
+  @apply bg-secondary-0;
+}
+
+.react-datepicker-wrapper {
+  display: block;
+}
+
+.datePicker {
+  width: 100%;
+}
