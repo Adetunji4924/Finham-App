@@ -10,7 +10,7 @@ import PrivacyPolicy from "./Pages/Privacy-policy.jsx";
 import PaymentInfo from "./payment-App/Payment-info.jsx";
 import PaymentOption1 from "./payment-App/Payment-options1.jsx";
 import PaymentOption2 from "./payment-App/Payments-options2.jsx";
-import PaymentStatusCompleted1 from "./payment-App/payment-status-completed1.jsx";
+import Invoice from "./payment-App/Invoice.jsx";
 
 const router = createBrowserRouter([
   {
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
 
   {
     path: "Support",
-    element: <PaymentStatusCompleted1 />,
+    element: <Invoice />,
   },
 
   {
