@@ -205,9 +205,20 @@ const PayerInformationParent = () => {
                         </defs>
                       </svg>
                       <div>
-                        <p className="font-Inter text-gray-900 text-[.9rem] font-medium">
-                          Click to Upload
-                        </p>
+                        <div>
+                          <input
+                            type="file"
+                            name="file"
+                            id="file"
+                            className="hidden"
+                          />
+                          <label
+                            htmlFor="file"
+                            className="font-Inter cursor-pointer text-gray-900 text-[.9rem] font-medium hover:text-secondary-0 transition-all delay-150 ease-in-out"
+                          >
+                            Click to Upload
+                          </label>
+                        </div>
                         <span className="font-Inter text-[.6rem] md:text-[.8rem] text-gray-400">
                           PNG, JPG | 10MB max.
                         </span>
