@@ -1,6 +1,6 @@
 const Invoice = () => {
     return (
-        <div className="px-8 py-8">
+        <div className="px-8 py-8 m-auto max-w-[50%]">
             <div className="header flex justify-between items-center">
                 <img src="src/images/MASTERLOGO (Black)-1 1.png" alt="Finham Logo" />
                 <h1 className="font-Inter text-[1.2rem] font-bold text-gray-800">Invoice</h1>
@@ -55,10 +55,10 @@ const Invoice = () => {
 
             <div className="py-4">
             <h1 className="font-Inter text-[.8rem] font-bold text-gray-700 mb-4">Payment Instructions</h1>
-            <p className="font-Inter text-[.8rem] text-gray-800">Ensure your payment via <span className="font-semibold">Bank transfer</span> is initiated by February 01, 2024, so that your educational service provider receives the funds within 3 business days from Finham. s</p>
-            <p className="font-Inter text-[.8rem] text-gray-800"><span className="font-semibold">Amount:</span> NGN 14,000,000.00</p>
-            <p className="font-Inter text-[.8rem] text-gray-800"><span className="font-semibold">Bank:</span> Access Bank</p>
-            <p className="font-Inter text-[.8rem] text-gray-800"><span className="font-semibold">Account Number:</span> 0011223344</p>
+            <p className="font-Inter text-[.8rem] text-gray-800 mb-4">Ensure your payment via <span className="font-semibold">Bank transfer</span> is initiated by February 01, 2024, so that your educational service provider receives the funds within 3 business days from Finham.</p>
+            <p className="font-Inter text-[.8rem] text-gray-800 mb-2"><span className="font-semibold">Amount:</span> NGN 14,000,000.00</p>
+            <p className="font-Inter text-[.8rem] text-gray-800 mb-2"><span className="font-semibold">Bank:</span> Access Bank</p>
+            <p className="font-Inter text-[.8rem] text-gray-800 mb-2"><span className="font-semibold">Account Number:</span> 0011223344</p>
             <p className="font-Inter text-[.8rem] text-gray-800"><span className="font-semibold">Account Name:</span> Finhampay Services</p>
             </div>
 

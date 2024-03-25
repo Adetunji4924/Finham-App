@@ -7,10 +7,11 @@ import Login from "./Pages/Login.jsx";
 import CreateAccount from "./Pages/Create-Account.jsx";
 import ContactUs from "./Pages/Contact-Us.jsx";
 import PrivacyPolicy from "./Pages/Privacy-policy.jsx";
-import PaymentInfo from "./payment-App/Payment-info.jsx";
 import PaymentOption1 from "./payment-App/Payment-options1.jsx";
 import PaymentOption2 from "./payment-App/Payments-options2.jsx";
 import Invoice from "./payment-App/Invoice.jsx";
+import StepContext from "./payment-App/StepContext.jsx";
+import Payment from "./payment-App/Payment.jsx";
 
 const router = createBrowserRouter([
   {
@@ -44,8 +45,8 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "Payment-Info",
-    element: <PaymentInfo />,
+    path: "Payment",
+    element: <StepContext><Payment /></StepContext>,
   },
 
   {

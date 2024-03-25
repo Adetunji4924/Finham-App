@@ -3,9 +3,9 @@ const Hero = () => {
   return (
     <div className="bg-herowave bg-cover bg-center bg-no-repeat md:px-[3rem] lg:px-[5rem] px-[1rem] py-[3rem] md:py-[5rem] flex flex-wrap md:flex-nowrap justify-between items-center gap-[1.5rem] lg:gap-[3rem]">
       <div className="md:w-[50%]">
-        <img className="w-[70%]" src="src/images/Frame 6.svg" alt="" />
+        <img className="w-[50%] md:w-[60%]" src="src/images/Frame 6.svg" alt="" />
         <div>
-          <h1 className="font-Bricolage text-[2rem] md:text-[3rem] lg:text-[4rem] mt-4 md:mt-0 font-semibold text-gray-800">
+          <h1 className="font-Bricolage text-[2rem] md:text-[3rem] lg:text-[3.5rem] mt-4 md:mt-0 font-semibold text-gray-800">
             Effortless Tuition Fee Payments on a{" "}
             <span className="text-secondary-0 font-bold bg-ellipse bg-contain bg-center bg-no-repeat">
               Global
