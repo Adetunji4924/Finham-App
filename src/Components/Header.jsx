@@ -44,7 +44,7 @@ const Header = () => {
           }`}
         >
           <li className="font-Inter text-[1rem] text-gray-600 hidden md:block">
-            <Link to="/Login" relative="path">
+            <Link to="/Payment-status" relative="path">
               Payment Status
             </Link>
           </li>
@@ -66,7 +66,7 @@ const Header = () => {
         </ul>
       </div>
       <div>
-        <Button value={"Make a Payment"} id={"nav-button"} />
+        <Link to="/dashboard" relative="path"><Button value={"Make a Payment"} id={"nav-button"} /></Link>
       </div>
 
       <div className="bar md:hidden">
