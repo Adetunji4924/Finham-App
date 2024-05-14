@@ -1,3 +1,5 @@
+import Avatar from "/src/images/Mask Group.png"
+
 const DashboardHeader = () => {
     return (
         <div className="bg-white flex justify-between items-center py-4 px-4 shadow-none md:shadow-sm">
@@ -49,7 +51,7 @@ const DashboardHeader = () => {
 
                 {/* for user avatar */}
                 <div>
-                    <img className="w-[90%] rounded-full" src="./src/images/Mask Group.png" alt="user-avatar" />
+                    <img className="w-[90%] rounded-full" src={Avatar} alt="user-avatar" />
                 </div>
             </div>
         </div>

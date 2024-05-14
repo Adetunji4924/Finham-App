@@ -13,12 +13,12 @@ const FaqAccordion = ({ faqData }) => {
       {faqData.map((item, index) => (
         <div key={index} className="mb-4 border-b border-gray-200">
           <div
-            className={`flex justify-between items-center p-4 cursor-pointer ${
+            className={`flex justify-between items-center p-4 gap-2 cursor-pointer ${
               activeIndex === index ? "bg-white" : ""
             }`}
             onClick={() => handleToggle(index)}
           >
-            <p className="font-semibold text-[.9rem] md:text-[1.1rem] font-Inter text-gray-900">
+            <p className="font-semibold text-[.9rem] md:text-[1.1rem] font-Inter w-[80%] text-gray-900">
               {item.question}
             </p>
             <span
@@ -66,7 +66,7 @@ const FaqAccordion = ({ faqData }) => {
           </div>
           {activeIndex === index && (
             <div className="p-4">
-              <p className="font-Inter text-[.8rem] md:text-[1rem] text-gray-600">
+              <p className="font-Inter text-[.8rem] md:text-[1rem] w-[90%] text-gray-600">
                 {item.answer}
               </p>
             </div>
