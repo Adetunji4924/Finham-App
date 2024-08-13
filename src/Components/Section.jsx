@@ -1,3 +1,5 @@
+import BgImageRight from "/src/images/Group 8.png";
+
 const Section = () => {
   return (
     <div className="bg-gray-100 flex flex-wrap md:flex-nowrap justify-between">
@@ -19,7 +21,7 @@ const Section = () => {
         </div>
       </div>
       <div className="md:w-[50%]">
-        <img src="./src/images/Group 8.png" alt="" />
+        <img src={BgImageRight} alt="" />
       </div>
     </div>
   );

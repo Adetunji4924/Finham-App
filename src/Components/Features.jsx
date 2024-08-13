@@ -1,4 +1,7 @@
 import PrimaryButton from "./Primary-Button";
+import Image1 from "/src/images/Frame.png";
+import Image2 from "/src/images/Frame (1).png";
+import Image3 from "/src/images/Frame (1).png";
 
 const Features = () => {
   return (
@@ -61,7 +64,7 @@ const Features = () => {
               </div>
             </div>
             <div className="">
-              <img src="./src/images/Frame.png" alt="" className="w-[100%]" />
+              <img src={Image1} alt="" className="w-[100%]" />
             </div>
           </div>
           <div className="bg-white px-4 py-4 rounded flex flex-col gap-5 items-start md:w-[50%]">
@@ -111,7 +114,7 @@ const Features = () => {
               </div>
             </div>
             <div>
-              <img src="./src/images/Frame (1).png" alt="" />
+              <img src={Image2} alt="" />
             </div>
           </div>
         </div>
@@ -149,7 +152,7 @@ const Features = () => {
             </div>
           </div>
           <div>
-            <img src="./src/images/div.benefits_image-wrapper.png" alt="" />
+            <img src={Image3} alt="" />
           </div>
         </div>
       </div>

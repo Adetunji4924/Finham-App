@@ -16,12 +16,12 @@ export default {
       },
 
       backgroundImage: {
-        herowave: "url('./src/images/Waves.svg')",
-        ellipse: "url('./src/images/Ellipse 2.svg')",
-        left: "url('./src/images/Left.png')",
-        sidebar: "url('./src/images/Sidebar.png')",
-        footer: "url('./src/images/Frame 45733.png')",
-        Privacy: "url('./src/images/Header section.png')"
+        herowave: "url('/Waves.svg')",
+        ellipse: "url('/Ellipse 2.svg')",
+        left: "url('/Left.png')",
+        sidebar: "url('/Sidebar.png')",
+        footer: "url('/Frame 45733.png')",
+        Privacy: "url('/Header section.png')"
       },
 
       screens: {

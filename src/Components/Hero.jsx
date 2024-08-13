@@ -8,7 +8,7 @@ const Hero = () => {
         <img className="w-[50%] md:w-[60%]" src={HeroImage} alt="" />
         <div>
           <h1 className="font-Bricolage text-[2rem] md:text-[3rem] lg:text-[3.5rem] mt-4 md:mt-0 font-semibold text-gray-800">
-            Effortle Tuition Fee Payments on a{" "}
+            Effortless Tuition Fee Payments on a{" "}
             <span className="text-secondary-0 font-bold bg-ellipse bg-contain bg-center bg-no-repeat">
               Global
             </span>{" "}
