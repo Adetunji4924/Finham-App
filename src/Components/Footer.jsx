@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="bg-footer bg-cover bg-center bg-no-repeat py-[4rem] px-[1rem] md:px-[3rem]">
       <div className="flex flex-wrap md:flex-nowrap justify-between border-b-2 border-[#EAECF0] pb-[3rem]">
         <div>
-          <img src="./src/images/MASTERLOGO (white) 2.png" alt="" />
+          <img src="/MASTERLOGO (white) 2.png" alt="Finham Logo" />
           <p className="font-Inter text-[1rem] text-gray-200 mt-6 mb-6">
             Effortless Tuition Fee Payments on a Global Scale.
           </p>

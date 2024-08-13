@@ -6,7 +6,7 @@ export const DASHBOARD_SIDEBAR_LINKS = [
     {
         key: 'dashboard',
         label: 'Dashboard',
-        path: 'makepayment',
+        path: '/makepayment',
         icon: <AiFillHome />
     },
 
@@ -32,14 +32,14 @@ export const DASHBOARD_SIDEBAR_LINKS = [
     },
 
     {
-        key: 'transactions',
+        key: 'services',
         label: 'Services',
         path: 'transactions',
         icon: <GrServices />
     },
 
     {
-        key: 'transactions',
+        key: 'settings',
         label: 'Settings',
         path: 'transactions',
         icon: <RiSettings5Fill/>

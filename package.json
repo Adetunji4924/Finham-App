@@ -15,6 +15,7 @@
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
     "classnames": "^2.5.1",
+    "framer-motion": "^11.3.24",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
     "mui-datatables": "^4.3.0",

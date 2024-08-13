@@ -32,7 +32,7 @@ const Header = () => {
     >
       <Link to="/" relative="path">
         <img
-          src="src/images/MASTERLOGO (Black)-1 1.png"
+          src="/MASTERLOGO (Black)-1 1.png"
           alt="Finham Logo"
           className="xsm:w-[100%] w-[70%]"
         />
@@ -49,7 +49,7 @@ const Header = () => {
             </Link>
           </li>
           <li className="font-Inter text-[1rem] text-gray-600">
-            <HashLink to="#Features" smooth relative="path">
+            <HashLink to="/#Features" smooth relative="path">
               Features
             </HashLink>
           </li>

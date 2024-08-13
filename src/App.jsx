@@ -11,19 +11,21 @@ import Payment from './payment-App/Payment.jsx';
 import Layout from './Dashboard/components/Layout.jsx';
 import Dashboard from './Dashboard/pages/Dashboard.jsx';
 import PaymentStatusChecker from './Pages/payment-status.jsx';
+import ScrollToTop from './Components/scrolltotop.jsx';
 
 function App() {
  
   return (
 
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path='/' element = {<Home />}></Route>
-        <Route path= "Payment-status" element = {<PaymentStatusChecker />}></Route>
-        <Route path='Create-Account' element = {<CreateAccount />}></Route>
-        <Route path='Contact-Us' element={<ContactUs />}></Route>
-        <Route path='privacy-policy' element={<PrivacyPolicy/>}></Route>
-        <Route path='Support' element={<Invoice/>}></Route>
+        <Route path= "/Payment-status" element = {<PaymentStatusChecker />}></Route>
+        <Route path='/Create-Account' element = {<CreateAccount />}></Route>
+        <Route path='/Contact-Us' element={<ContactUs />}></Route>
+        <Route path='/privacy-policy' element={<PrivacyPolicy/>}></Route>
+        <Route path='/Support' element={<Invoice/>}></Route>
         <Route path='makepayment' element={<Layout />}>
           <Route index element={<Dashboard />}></Route>
           <Route path='transactions' element={<Transactions />}></Route>

@@ -1,5 +1,6 @@
 // FaqAccordion.js
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const FaqAccordion = ({ faqData }) => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -64,13 +65,32 @@ const FaqAccordion = ({ faqData }) => {
               </svg>
             </span>
           </div>
-          {activeIndex === index && (
+          <AnimatePresence>
+            {activeIndex === index && (
+              <motion.div
+                key="content"
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                className="overflow-hidden"
+              >
+                <div className="p-4">
+                  <p className="font-Inter text-[.8rem] md:text-[1rem] w-[90%] text-gray-600">
+                    {item.answer}
+                  </p>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          {/* {activeIndex === index && (
             <div className="p-4">
               <p className="font-Inter text-[.8rem] md:text-[1rem] w-[90%] text-gray-600">
                 {item.answer}
               </p>
             </div>
-          )}
+          )} */}
         </div>
       ))}
     </div>
