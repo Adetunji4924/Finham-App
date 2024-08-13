@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
+import HeroImage from "/src/images/Frame 6.svg"
+import HeroImage2 from "/src/images/Hero Image.png"
 const Hero = () => {
   return (
     <div className="bg-herowave bg-cover bg-center bg-no-repeat md:px-[3rem] lg:px-[5rem] px-[1rem] py-[3rem] md:py-[5rem] flex flex-wrap md:flex-nowrap justify-between items-center gap-[1.5rem] lg:gap-[3rem]">
       <div className="md:w-[50%]">
-        <img className="w-[50%] md:w-[60%]" src="src/images/Frame 6.svg" alt="" />
+        <img className="w-[50%] md:w-[60%]" src={HeroImage} alt="" />
         <div>
           <h1 className="font-Bricolage text-[2rem] md:text-[3rem] lg:text-[3.5rem] mt-4 md:mt-0 font-semibold text-gray-800">
-            Effortless Tuition Fee Payments on a{" "}
+            Effortle Tuition Fee Payments on a{" "}
             <span className="text-secondary-0 font-bold bg-ellipse bg-contain bg-center bg-no-repeat">
               Global
             </span>{" "}
@@ -86,7 +88,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="md:w-[50%]">
-        <img src="src/images/Hero Image.png" alt="" />
+        <img src={HeroImage2} alt="" />
       </div>
     </div>
   );

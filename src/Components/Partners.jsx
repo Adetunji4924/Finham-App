@@ -1,6 +1,11 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Logo1 from "/src/images/1bristol.png";
+import Logo2 from "/src/images/2rochester.png";
+import Logo3 from "/src/images/3queens.png";
+import Logo4 from "/src/images/4twente.png";
+import Logo5 from "/src/images/5mcg.png"
 
 const Partners = () => {
   const settings = {
@@ -22,19 +27,19 @@ const Partners = () => {
       <div className="px-[1rem] md:px-[3rem]">
         <Slider {...settings} className="">
           <div>
-            <img className="w-[60%]" src="./src/images/1bristol.png" alt="" />
+            <img className="w-[60%]" src={Logo1} alt="" />
           </div>
           <div>
-            <img className="w-[60%]" src="./src/images/2rochester.png" alt="" />
+            <img className="w-[60%]" src={Logo2} alt="" />
           </div>
           <div>
-            <img className="w-[60%]" src="./src/images/3queens.png" alt="" />
+            <img className="w-[60%]" src={Logo3} alt="" />
           </div>
           <div>
-            <img className="w-[60%]" src="./src/images/4twente.png" alt="" />
+            <img className="w-[60%]" src={Logo4} alt="" />
           </div>
           <div>
-            <img className="w-[60%]" src="./src/images/5mcg.png" alt="" />
+            <img className="w-[60%]" src={Logo5} alt="" />
           </div>
         </Slider>
       </div>
