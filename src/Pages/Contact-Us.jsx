@@ -1,5 +1,6 @@
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
+import ContactUsImage from "/src/images/Image contact.png"
 
 const ContactUs = () => {
   return (
@@ -70,7 +71,7 @@ const ContactUs = () => {
           </div>
         </div>
         <div className="md:block hidden">
-          <img src="./src/images/Image contact.png" alt="" className="" />
+          <img src={ContactUsImage} alt="" className="" />
         </div>
       </div>
       <Footer />
