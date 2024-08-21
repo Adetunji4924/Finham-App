@@ -12,6 +12,7 @@ import Layout from './Dashboard/components/Layout.jsx';
 import Dashboard from './Dashboard/pages/Dashboard.jsx';
 import PaymentStatusChecker from './Pages/payment-status.jsx';
 import ScrollToTop from './Components/scrolltotop.jsx';
+import ExchangeRate from './Dashboard/pages/exchange-rate.jsx';
 
 function App() {
  
@@ -29,6 +30,7 @@ function App() {
         <Route path='makepayment' element={<Layout />}>
           <Route index element={<Dashboard />}></Route>
           <Route path='transactions' element={<Transactions />}></Route>
+          <Route path='exchange-rate' element={<ExchangeRate />}></Route>
         </Route>
         <Route path='Payment' element={<StepContext><Payment /></StepContext>}></Route>
       </Routes>

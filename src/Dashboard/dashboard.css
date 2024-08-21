@@ -1,19 +1,23 @@
 table > thead > tr > th {
-    @apply text-start font-Inter text-[1rem] text-[#718EBF] font-medium py-4 px-4
+  @apply text-center font-Inter text-[1rem] text-[#718EBF] font-medium py-4 px-4;
 }
 
 table > tbody > tr > td {
-    @apply border-y border-gray-200 py-4 text-[1rem] font-Inter text-gray-800 text-start align-text-top whitespace-nowrap px-4
+  @apply py-4 text-[1rem] font-Inter text-gray-800 text-center align-text-top whitespace-nowrap px-4 items-center;
 }
 
 .total > td {
-    @apply text-red-500 border-none
+  @apply text-red-500 border-none;
 }
 
 td > button {
-    @apply border border-gray-800 rounded-full px-4 py-2 font-medium text-[.9rem] hover:border-secondary-0 hover:text-secondary-0 transition ease-in-out delay-150
+  @apply border border-gray-800 rounded-full px-4 py-2 font-medium text-[.9rem] hover:border-secondary-0 hover:text-secondary-0 transition ease-in-out delay-150;
 }
 
-*{
-    @apply overflow-x-hidden
+.currency-icon {
+  @apply text-secondary-0;
+}
+
+* {
+  @apply overflow-x-hidden;
 }

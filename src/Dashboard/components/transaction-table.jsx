@@ -1,7 +1,7 @@
 const TransactionTable = ({ data }) => {
   return (
-    <div>
-      <table className="w-full table-auto overflow-x-auto">
+    <div className="overflow-x-auto">
+      <table className="min-w-full table-auto">
         <thead>
           <tr>
             <th className="text-start">SL No</th>
@@ -14,7 +14,7 @@ const TransactionTable = ({ data }) => {
         </thead>
         <tbody>
           {data.map((item, index) => (
-            <tr key={index}>
+            <tr key={index} className="border-y border-gray-200 last:border-0">
               <td>{item.SlNo}</td>
               <td>{item.InvoiceNumber}</td>
               <td>{item.Date}</td>

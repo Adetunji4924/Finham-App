@@ -1,5 +1,6 @@
 import { AiFillHome, AiOutlineTransaction, AiFillCreditCard } from "react-icons/ai";
-import { RiAccountCircleFill, RiSettings5Fill } from "react-icons/ri";
+import { RiSettings5Fill } from "react-icons/ri";
+import { BsCurrencyExchange } from "react-icons/bs";
 import { GrServices } from "react-icons/gr";
 
 export const DASHBOARD_SIDEBAR_LINKS = [
@@ -18,10 +19,11 @@ export const DASHBOARD_SIDEBAR_LINKS = [
     },
 
     {
-        key: 'accounts',
-        label: 'Accounts',
-        path: 'transactions',
-        icon: <RiAccountCircleFill />
+        key: 'exchange-rate',
+        label: 'Exchange Rate',
+        path: 'exchange-rate',
+        icon: <BsCurrencyExchange />
+
     },
 
     {

@@ -4,13 +4,14 @@ import { DASHBOARD_SIDEBAR_LINKS } from "../lib/sidebardata.jsx";
 import classNames from "classnames";
 
 const linkClass =
-  "flex items-center gap-2 font-medium px-3 py-2 hover:text-secondary-0 hover:no-underline active:text-secondary-0 rounded-sm text-[1.1rem] font-Inter text-gray-400 transition delay-150 ease-in-out";
+  "flex items-center gap-4 font-medium px-3 py-2 hover:text-secondary-0 hover:no-underline active:text-secondary-0 rounded-sm text-[1.1rem] font-Inter text-gray-400 transition delay-150 ease-in-out";
 const SideBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
+
   return (
     <div className="py-8 px-4 bg-white">
       {/* toggle button */}
@@ -53,16 +54,18 @@ const SideBar = () => {
       </div>
       <div>
         <Link to="/" relative="path">
-        <img
-          className="hidden md:block"
-          src="/MASTERLOGO (Black)-1 1.png"
-          alt="Finham-logo"
-        />
+          <img
+            className="hidden md:block"
+            src="/MASTERLOGO (Black)-1 1.png"
+            alt="Finham-logo"
+          />
         </Link>
       </div>
       <div
-        className={`mt-8 flex flex-col gap-4 absolute md:relative bg-white w-full md:w-auto transition-all duration-1000 ease-in ${
-          isMenuOpen ? "flex h-lvh top-8 pt-4" : "hidden md:flex"
+        className={`mt-8 flex flex-col gap-8 absolute md:relative bg-white w-full md:w-auto transition-all duration-1000 ease-in-out z-20 ${
+          isMenuOpen
+            ? "translate-x-0 flex h-lvh top-8 pt-4"
+            : "-translate-x-full md:translate-x-0 h-lvh top-8 md:flex"
         }`}
       >
         {/* for dashboard */}
@@ -78,6 +81,9 @@ export default SideBar;
 
 function SidebarLink({ link }) {
   const { pathname } = useLocation();
+
+  // Check if the current path starts with the link path
+  // const isActive = pathname.startsWith(link.path);
 
   return (
     <Link
