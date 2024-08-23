@@ -1,12 +1,8 @@
 import { Button } from "@mui/material";
-
-const pounds = (
-  <span className="material-symbols-outlined">currency_pound</span>
-);
-
-const dollars = <span className="material-symbols-outlined">attach_money</span>;
-
-const euros = <span className="material-symbols-outlined">euro_symbol</span>;
+import { HiCurrencyDollar } from "react-icons/hi2";
+import { HiCurrencyPound } from "react-icons/hi2";
+import { HiCurrencyEuro } from "react-icons/hi2";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const rateData = [
   {
@@ -15,7 +11,7 @@ const rateData = [
     currencyValue: "1 GBP",
     currencyNaira: "1000 NGN",
     lastUpdated: "15-08-2024",
-    currencyIcon: pounds,
+    currencyIcon: <HiCurrencyPound />,
   },
 
   {
@@ -24,7 +20,7 @@ const rateData = [
     currencyValue: "1 USD",
     currencyNaira: "1000 NGN",
     lastUpdated: "15-08-2024",
-    currencyIcon: dollars,
+    currencyIcon: <HiCurrencyDollar />,
   },
 
   {
@@ -33,7 +29,7 @@ const rateData = [
     currencyValue: "1 EUR",
     currencyNaira: "1000 NGN",
     lastUpdated: "15-08-2024",
-    currencyIcon: euros,
+    currencyIcon: <HiCurrencyEuro />,
   },
 
   {
@@ -42,7 +38,7 @@ const rateData = [
     currencyValue: "1 CAD",
     currencyNaira: "1000 NGN",
     lastUpdated: "15-08-2024",
-    currencyIcon: dollars,
+    currencyIcon: <HiCurrencyDollar />,
   },
 ];
 
@@ -61,9 +57,9 @@ const ExchangeRateTable = ({data}) => {
         <tbody>
           {data.map((item, index) => (
             <tr key={index} className="border-y border-gray-200 last:border-0">
-              <td className="currency-icon">{item.currencyIcon}</td>
+              <td className="currency-icon text-[3rem] mb-0">{item.currencyIcon}</td>
               <td>{item.currency}</td>
-              <td><div className="flex justify-center items-center gap-2">{item.currencyValue} <span className="material-symbols-outlined">trending_flat</span> {item.currencyNaira}</div></td>
+              <td><div className="flex justify-center items-center gap-2">{item.currencyValue} <FaLongArrowAltRight /> {item.currencyNaira}</div></td>
               <td>{item.lastUpdated}</td>
               <td>
                 <Button>Update</Button>

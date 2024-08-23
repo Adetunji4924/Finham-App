@@ -28,7 +28,7 @@ const Header = () => {
     <div
       className={`${
         isSticky ? "fixed top-0 left-0 w-full" : ""
-      } flex justify-between items-center z-50 bg-white border-gray-100 border-b-2 md:px-[3rem] lg:px-[5rem] px-[1rem] py-[1rem] backdrop-blur-md bg-opacity-70`}
+      } flex justify-between items-center z-50 bg-white border-gray-100 border-b-2 md:px-[3rem] lg:px-[5rem] px-[1rem] py-[1rem] bg-opacity-70`}
     >
       <Link to="/" relative="path">
         <img
@@ -38,10 +38,10 @@ const Header = () => {
         />
       </Link>
       <div>
-        <ul
+      <ul
           className={`flex md:flex md:flex-row flex-col absolute md:relative justify-center items-center gap-[3rem] mt-[3rem] md:mt-0 py-4 md:py-0 md:bg-transparent bg-gray-100 w-full md:w-auto left-0 transition-all duration-1000 ease-in ${
-            isMenuOpen ? "top-10 md:top-0 flex" : "top-[-490px] md:top-0 flex"
-          }`}
+            isMenuOpen ? "top-10 md:top-0 flex z-50" : "top-[-490px] md:top-0 flex"
+          } absolute md:static z-50`}
         >
           <li className="font-Inter text-[1rem] text-gray-600 hidden md:block">
             <Link to="/Payment-status" relative="path">

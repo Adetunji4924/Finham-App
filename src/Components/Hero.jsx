@@ -79,7 +79,7 @@ const Hero = () => {
               id="Institution"
               placeholder="Email"
             />
-            <Link to="Payment-Info" relative="path">
+            <Link to="Payment" relative="path">
                 <button className="rounded-r bg-[#002147] px-[1.2rem] py-[.75rem] font-Inter text-white font-medium hover:bg-secondary-0 transition ease-in-out delay-100">
                 Pay your Tuition
                 </button>

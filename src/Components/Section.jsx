@@ -1,4 +1,5 @@
 import BgImageRight from "/src/images/Group 8.png";
+import { Link } from "react-router-dom";
 
 const Section = () => {
   return (
@@ -15,9 +16,11 @@ const Section = () => {
           experience that allows you to pay for your tuition easily
         </p>
         <div className="mt-4">
+          <Link to="page-not-found" relative="path">
           <button className="text-Inter text-gray-800 font-medium bg-white rounded px-4 md:px-5 md:py-4 py-3 hover:bg-secondary-0 hover:text-white ease-in-out transition delay-100">
             Make a Payment
           </button>
+          </Link>
         </div>
       </div>
       <div className="md:w-[50%]">

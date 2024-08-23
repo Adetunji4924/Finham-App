@@ -82,9 +82,6 @@ export default SideBar;
 function SidebarLink({ link }) {
   const { pathname } = useLocation();
 
-  // Check if the current path starts with the link path
-  // const isActive = pathname.startsWith(link.path);
-
   return (
     <Link
       to={link.path}

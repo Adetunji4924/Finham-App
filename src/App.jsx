@@ -13,6 +13,7 @@ import Dashboard from './Dashboard/pages/Dashboard.jsx';
 import PaymentStatusChecker from './Pages/payment-status.jsx';
 import ScrollToTop from './Components/scrolltotop.jsx';
 import ExchangeRate from './Dashboard/pages/exchange-rate.jsx';
+import Error404 from './Pages/404page.jsx';
 
 function App() {
  
@@ -27,6 +28,7 @@ function App() {
         <Route path='/Contact-Us' element={<ContactUs />}></Route>
         <Route path='/privacy-policy' element={<PrivacyPolicy/>}></Route>
         <Route path='/Support' element={<Invoice/>}></Route>
+        <Route path='/page-not-found' element={<Error404/>}></Route>
         <Route path='makepayment' element={<Layout />}>
           <Route index element={<Dashboard />}></Route>
           <Route path='transactions' element={<Transactions />}></Route>

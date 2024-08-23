@@ -21,10 +21,9 @@ const DashboardHeader = () => {
       </div>
       <div className="flex gap-4">
         {/* search bar */}
-        <div className="hidden md:flex">
-          <div className="relative">
+        <div className="hidden md:flex relative">
+          <div className="absolute left-5 top-4">
             <svg
-              className="absolute left-5 top-4"
               width="20"
               height="20"
               viewBox="0 0 20 20"
